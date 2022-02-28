@@ -3,6 +3,8 @@ import math
 import requests
 from datetime import datetime as dt
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
