@@ -45,6 +45,9 @@ def reset_timer():
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
     global reps, study_time, session_start_time, session_close_time
+    # Make window pop up to the front when timer ends
+    window.attributes("-topmost", 1)
+    window.attributes("-topmost", 0)
     reps += 1
     work_secs = WORK_MIN * 60
     short_break_secs = SHORT_BREAK_MIN * 60
