@@ -45,6 +45,8 @@ def reset_timer():
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
     global reps, study_time, session_start_time, session_close_time
+    # Restore window if minimised
+    window.deiconify()
     # Make window pop up to the front when timer ends
     window.attributes("-topmost", 1)
     window.attributes("-topmost", 0)
